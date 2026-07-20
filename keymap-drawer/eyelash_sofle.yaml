@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: Win Fn, h: toggle}
-  - {t: '`', s: '~'}
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: Mac, h: toggle}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -54,9 +54,9 @@ layers:
   - {t: /, s: '?'}
   - {t: Mac Fn, h: toggle}
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
+  - {t: '`', s: '~'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
