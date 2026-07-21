@@ -194,17 +194,14 @@
 
         layer_2 {
             bindings = <
-/* 左手上段 */
-        &kp DEL      &kp PSCRN    &kp SLCK     &kp PAUSE    &trans                    &trans       &kp LBKT     &kp LS(LBKT) &kp LS(EQUAL) &kp EQUAL    &kp LS(MINUS) &trans
-        /* 左手2段目 */
-        &kp INS      &kp HOME     &kp UP       &kp END      &trans                    &trans       &kp LS(N8)   &kp LS(N9)   &kp LS(RBKT)  &kp LS(NUHS) &kp LS(INT1)  &trans
-        /* 左手3段目 */
-        &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &trans                    &trans       &kp RBKT     &kp NUHS     &trans        &trans       &kp INT1      &trans
-        /* 左手下段 */
-        &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans        &trans       &trans        &trans
-                                               &trans       &trans       &trans       &trans       &trans       &trans
+&kp DEL   &kp PSCRN  &kp SLCK  &kp PAUSE  &trans  &trans    &trans    &trans  &kp LBKT    &kp LS(LBKT)  &kp LS(EQUAL)  &kp EQUAL    &kp LS(MINUS)  &trans
+&kp INS   &kp HOME   &kp UP    &kp END    &trans  &trans    &trans    &trans  &kp LS(N8)  &kp LS(N9)    &kp LS(RBKT)   &kp LS(NUHS) &kp LS(INT1)   &trans
+&trans    &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans    &trans    &trans  &kp RBKT    &kp NUHS      &trans         &trans       &kp INT1       &trans
+&trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans  &trans      &trans        &trans         &trans       &trans         &trans
+                               &trans     &trans  &trans    &trans    &trans  &trans
+            >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&zoom_encoder>;
             display-name = "symbol&sys";
         };
 
