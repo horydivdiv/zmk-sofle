@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  Windows:
+  main:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: Windows, h: toggle}
+  - {t: main, h: toggle}
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: Win Fn, h: toggle}
+  - {t: number&mark, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: Mac, h: toggle}
+  - {t: Mark, h: toggle}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -65,7 +65,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
-  Win Fn:
+  number&mark:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Mac:
+  Mark:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -196,7 +196,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - '&snap_mac_clip'
   Mac Fn:
-  - {t: Windows, h: toggle}
+  - {t: main, h: toggle}
   - F1
   - F2
   - F3
