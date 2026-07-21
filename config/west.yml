@@ -8,7 +8,6 @@ manifest:
       url-base: https://github.com/englmaxi
     - name: M165437
       url-base: https://github.com/M165437
-
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
   projects:
@@ -24,9 +23,9 @@ manifest:
       revision: v0.3.0
     - name: zmk-nice-oled
       remote: mctechnology17
-      revision: main
+      revision: v0.3.0
     - name: hammerbeam-slideshow
       remote: gpeye
-      revision: main
+      revision: c35e76a6b825ad7ed68b37e8913d09a25b290cb6
   self:
     path: config
