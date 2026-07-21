@@ -194,10 +194,10 @@
 
         layer_2 {
             bindings = <
-&kp DEL   &kp PSCRN  &kp SLCK  &kp PAUSE  &trans  &trans    &trans    &trans  &kp LBKT    &kp LS(LBKT)  &kp LS(EQUAL)  &kp EQUAL    &kp LS(MINUS)  &trans
-&kp INS   &kp HOME   &kp UP    &kp END    &trans  &trans    &trans    &trans  &kp LS(N8)  &kp LS(N9)    &kp LS(RBKT)   &kp LS(NUHS) &kp LS(INT1)   &trans
-&trans    &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans    &trans    &trans  &kp RBKT    &kp NUHS      &trans         &trans       &kp INT1       &trans
-&trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans  &trans      &trans        &trans         &trans       &trans         &trans
+&kp DEL   &kp PSCRN  &kp SLCK  &kp PAUSE  &trans  &trans    &trans    &trans  &kp LBKT    &kp LS(LBKT)  &kp LS(EQUAL)  &kp EQUAL    &kp LS(MINUS)
+&kp INS   &kp HOME   &kp UP    &kp END    &trans  &trans    &trans    &trans  &kp LS(N8)  &kp LS(N9)    &kp LS(RBKT)   &kp LS(NUHS) &kp LS(INT1)
+&trans    &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans    &trans    &trans  &kp RBKT    &kp NUHS      &trans         &trans       &kp INT1
+&trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans  &trans      &trans        &trans         &trans       &trans
                                &trans     &trans  &trans    &trans    &trans  &trans
             >;
 
