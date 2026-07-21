@@ -94,7 +94,9 @@
         zoom_encoder: zoom_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
+
             /* 1つ目が反時計回り（縮小）、2つ目が時計回り（拡大） */
+
             bindings = <&kp LC(MINUS)>, <&kp LC(PLUS)>;
         };
     };
@@ -207,11 +209,11 @@
 
         layer_3 {
             bindings = <
-&to WINDOWS  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7        &kp F8    &kp F9         &kp F10           &trans
-&to 4        &none            &kp UP          &mkp LCLK        &mkp MCLK        &mkp RCLK          &mmv MOVE_DOWN   &kp PG_UP        &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp MINUS         &trans
-&to 5        &kp LEFT         &kp DOWN        &kp RIGHT        &none            &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT      &kp DOWN  &kp RIGHT      &kp LEFT_BRACKET  &trans
-&to 6        &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp HOME      &kp END   &kp C_VOL_DN   &kp C_VOL_UP      &trans
-&kp C_MUTE   &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans        &trans    &trans         &snap_mac_file
+&to WINDOWS  &kp F1          &kp F2      &kp F3      &kp F4      &kp F5          &mmv MOVE_UP     &kp F6           &kp F7        &kp F8    &kp F9         &kp F10           &trans
+&to 4        &none           &kp UP      &mkp LCLK   &mkp MCLK   &mkp RCLK       &mmv MOVE_DOWN   &kp PG_UP        &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp MINUS         &trans
+&to 5        &kp LEFT        &kp DOWN    &kp RIGHT   &none       &mkp MB5        &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT      &kp DOWN  &kp RIGHT      &kp LEFT_BRACKET  &trans
+&to 6        &bt BT_CLR_ALL  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp HOME      &kp END   &kp C_VOL_DN   &kp C_VOL_UP      &trans
+&kp C_MUTE   &trans          &trans      &trans      &trans      &trans          &mkp LCLK        &trans           &trans        &trans    &trans         &snap_mac_file
             >;
 
             display-name = "Mac Fn";
