@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_home_end'
   - $$mdi:apple-keyboard-shift$$
-  - INTERNATIONAL 4
+  - INTERNATIONAL 2
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
