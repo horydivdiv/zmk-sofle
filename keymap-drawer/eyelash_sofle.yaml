@@ -236,11 +236,11 @@ layers:
   - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Utils, h: toggle}
-  - RGB OFF
-  - RGB ON
-  - RGB EFF
-  - RGB EFR
-  - RGB SPI
+  - BT CLR ALL
+  - $$mdi:bluetooth-off$$
+  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB BRI
   - HOME
