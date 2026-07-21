@@ -66,30 +66,30 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
   number&mark:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F1
   - F2
   - F3
   - F4
   - F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
   - F7
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F8
   - F9
   - F10
+  - F11
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F1
   - Sft+KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
   - KP DIVIDE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - PG UP
-  - Ctl+$$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
-  - Ctl+$$mdi:arrow-right-bold$$
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - Sft+#
+  - {t: Sft+7, s: Sft+&}
+  - {t: 'Ctl+[', s: 'Ctl+{'}
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -99,11 +99,11 @@ layers:
   - KP 6
   - KP MINUS
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - PG DN
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '#'
+  - Sft+4
+  - {t: Sft+5, s: Sft+%}
+  - Sft+6
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
@@ -112,24 +112,24 @@ layers:
   - KP 3
   - {t: Sft+-, s: Sft+_}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - RGB BRI
-  - HOME
-  - END
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
+  - Sft+1
+  - Sft+2
+  - Sft+3
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
+  - '&mkp MB3'
   - KP 0
   - KP DOT
+  - INTERNATIONAL 1
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '''', s: '"'}
+  - {t: ;, s: ':'}
   Mark:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
