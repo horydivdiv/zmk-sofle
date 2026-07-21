@@ -90,6 +90,13 @@
 
             bindings = <&kp C_BRI_DN>, <&kp C_BRI_UP>;
         };
+
+        zoom_encoder: zoom_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            /* 1つ目が反時計回り（縮小）、2つ目が時計回り（拡大） */
+            bindings = <&kp LC(MINUS)>, <&kp LC(PLUS)>;
+        };
     };
 
     combos {
@@ -178,7 +185,7 @@
             >;
 
             display-name = "number&mark";
-            sensor-bindings = <&click_encoder>;
+            sensor-bindings = <&zoom_encoder>;
         };
 
         //
