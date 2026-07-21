@@ -23,9 +23,9 @@ manifest:
       revision: v0.3.0
     - name: zmk-nice-oled
       remote: mctechnology17
-      revision: v0.3.0
+      revision: main
     - name: hammerbeam-slideshow
       remote: gpeye
-      revision: c35e76a6b825ad7ed68b37e8913d09a25b290cb6
+      revision: main
   self:
     path: config
