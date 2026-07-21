@@ -76,14 +76,18 @@
         click_encoder: click_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
+
             // 1つ目が反時計回り（左クリック）、2つ目が時計回り（右クリック）
+
             bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
 
         bri_encoder: brightness_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
+
             /* 1つ目が反時計回り（暗く）、2つ目が時計回り（明るく） */
+
             bindings = <&kp C_BRI_DN>, <&kp C_BRI_UP>;
         };
     };
@@ -166,11 +170,11 @@
 
         layer_1 {
             bindings = <
-&trans      &kp F1              &kp F2           &kp F3           &kp F4           &kp F5           &mmv MOVE_UP     &kp F6           &kp F7        &kp F8    &kp F9         &kp F10       &trans
-&trans      &kp LS(KP_NUMLOCK)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &mmv MOVE_DOWN   &kp PG_UP        &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp MINUS     &trans
-&trans      &kp KP_MULTIPLY     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT      &kp DOWN  &kp RIGHT      &kp LBKT      &trans
-&trans      &kp KP_PLUS         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp HOME      &kp END   &kp C_VOL_DN   &kp C_VOL_UP  &trans
-&kp C_MUTE  &kp KP_NUMBER_0     &kp KP_DOT       &trans           &trans           &trans           &mkp LCLK        &trans           &trans        &trans    &trans         &trans
+&kp F2    &kp F3              &kp F4           &kp F5               &kp F6           &kp F7           &mmv MOVE_UP     &kp F8                 &kp F9               &kp F10           &kp F11               &kp F12           &trans
+&kp F1    &kp LS(KP_NUMLOCK)  &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_DIVIDE    &mmv MOVE_DOWN   &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(N7)        &kp LC(LEFT_BRACKET)  &kp MINUS         &trans
+&trans    &kp KP_MULTIPLY     &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp KP_MINUS     &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp LS(NUMBER_4)  &kp LS(N5)            &kp LS(NUMBER_6)  &trans
+&trans    &kp KP_PLUS         &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp LS(MINUS)    &mmv MOVE_RIGHT  &kp LS(N8)             &kp LS(N9)           &kp LS(NUMBER_1)  &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &trans
+&mkp MB3  &kp KP_NUMBER_0     &kp KP_DOT       &kp INTERNATIONAL_1  &trans           &trans           &none            &trans                 &trans               &trans            &kp SINGLE_QUOTE      &kp SEMICOLON
             >;
 
             display-name = "number&mark";
