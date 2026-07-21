@@ -65,6 +65,13 @@
             tapping-term-ms = <200>;
             bindings = <&mo MAC_FN>, <&to MAC_FN>;
         };
+
+        td_home_end: tap_dance_home_end {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp HOME>, <&kp END>;
+        };
     };
 
     combos {
