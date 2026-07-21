@@ -72,6 +72,20 @@
             tapping-term-ms = <200>;
             bindings = <&kp HOME>, <&kp END>;
         };
+
+        click_encoder: click_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            // 1つ目が反時計回り（左クリック）、2つ目が時計回り（右クリック）
+            bindings = <&mkp LCLK>, <&mkp RCLK>;
+        };
+
+        bri_encoder: brightness_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            /* 1つ目が反時計回り（暗く）、2つ目が時計回り（明るく） */
+            bindings = <&kp C_BRI_DN>, <&kp C_BRI_UP>;
+        };
     };
 
     combos {
@@ -146,8 +160,8 @@
 &kp C_MUTE        &kp LEFT_GUI  &kp LEFT_ALT  &kp GRAVE  &kp SPACE  &kp ENTER    &td_home_end  &kp RIGHT_SHIFT  &kp INTERNATIONAL_4  &kp BACKSPACE  &kp DELETE  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "Windows";
+            sensor-bindings = <&scroll_encoder>;
+            display-name = "main";
         };
 
         layer_1 {
@@ -159,8 +173,8 @@
 &kp C_MUTE  &kp KP_NUMBER_0     &kp KP_DOT       &trans           &trans           &trans           &mkp LCLK        &trans           &trans        &trans    &trans         &trans
             >;
 
-            display-name = "Win Fn";
-            sensor-bindings = <&scroll_encoder>;
+            display-name = "number&mark";
+            sensor-bindings = <&click_encoder>;
         };
 
         //
@@ -177,7 +191,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "Mac";
+            display-name = "Mark";
         };
 
         layer_3 {
@@ -190,7 +204,7 @@
             >;
 
             display-name = "Mac Fn";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&bri_encoder>;
         };
 
         //
