@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_home_end'
   - $$mdi:apple-keyboard-shift$$
-  - A
+  - '&jis_henkan'
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
@@ -121,7 +121,7 @@ layers:
   - '&mkp MB3'
   - KP 0
   - KP DOT
-  - INTERNATIONAL 1
+  - '&jis_ro'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
