@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - {t: '-', s: _}
   - {t: symbol&sys, h: toggle}
   - $$mdi:apple-keyboard-control$$
   - Z
