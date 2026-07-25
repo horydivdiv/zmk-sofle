@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_home_end'
   - $$mdi:apple-keyboard-shift$$
-  - '&jis_henkan'
+  - INT HENKAN
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
@@ -92,7 +92,7 @@ layers:
   - {t: 'Ctl+[', s: 'Ctl+{'}
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INT YEN
   - KP MULTIPLY
   - KP 4
   - KP 5
@@ -121,7 +121,7 @@ layers:
   - '&mkp MB3'
   - KP 0
   - KP DOT
-  - '&jis_ro'
+  - INT RO
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
