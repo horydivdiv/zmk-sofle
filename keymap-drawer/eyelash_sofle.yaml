@@ -124,7 +124,7 @@ layers:
   - INT RO
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB1'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-scroll-wheel$$
   - '&mkp MB2'
   - {t: '$$mdi:transfer$$', type: trans}
