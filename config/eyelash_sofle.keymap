@@ -77,9 +77,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
 
-            // 1つ目が反時計回り（左クリック）、2つ目が時計回り（右クリック）
+            // 1つ目が反時計回り（右クリック）、2つ目が時計回り（左クリック）
 
-            bindings = <&mkp LCLK>, <&mkp RCLK>;
+            bindings = <&mkp RCLK>, <&mkp LCLK>;
         };
 
         bri_encoder: brightness_encoder {
